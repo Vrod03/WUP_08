@@ -46,7 +46,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This grapgh shows that the longer the bear grows so does the length of the head.  The residual standard error is 4.2 and the multiple R-squared is 0.85.
+This graph shows that the longer the bear grows so does the length of the head.  The residual standard error is 4.2 and the multiple R-squared is 0.85.
 
 ```{r}
 simp <- lm(LENGTH~HEADWTH,data=bears)
@@ -55,6 +55,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
+This grapgh shows that head width grows as length of bear grows. The residual standard error is 7.3 and the multiple R-squared is 0.54.
 
 
 ```{r}
