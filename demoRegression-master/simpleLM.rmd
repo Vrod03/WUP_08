@@ -27,7 +27,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-
+This graph tells us that the longer the bear gets the wider the neck gets. The residual standard error is 5.4 and the multiple R-squared is 0.75.
 
 ```{r}
 simp <- lm(LENGTH~AGE,data=bears)
@@ -35,6 +35,8 @@ plot(LENGTH~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+
+This graph explains that as the length of the bear grows it gets older. The residual standard error is 7.5 and the multiple R-squared is 0.52.
 
 
 ```{r}
@@ -45,6 +47,13 @@ summary.lm(simp)
 ```
 
 
+
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
