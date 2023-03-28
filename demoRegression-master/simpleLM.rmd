@@ -27,7 +27,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph tells us that the longer the bear gets the wider the neck gets. The residual standard error is 5.4 and the multiple R-squared is 0.75.
+This graph tells us that the longer the bear gets the wider the neck gets. The residual standard error is 5.4 and the adjusted R-squared is 0.7476.
 
 ```{r}
 simp <- lm(LENGTH~AGE,data=bears)
@@ -36,7 +36,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph explains that as the length of the bear grows it gets older. The residual standard error is 7.5 and the multiple R-squared is 0.52.
+This graph explains that as the length of the bear grows it gets older. The residual standard error is 7.5 and the adjusted R-squared is 0.5073.
 
 
 ```{r}
@@ -46,7 +46,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph shows that the longer the bear grows so does the length of the head.  The residual standard error is 4.2 and the multiple R-squared is 0.85. So far this one has the largest r squared.
+This graph shows that the longer the bear grows so does the length of the head.  The residual standard error is 4.2 and the adjusted R-squared is 0.8434. So far this one has the largest r squared.
 
 ```{r}
 simp <- lm(LENGTH~HEADWTH,data=bears)
@@ -55,7 +55,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph shows that head width grows as length of bear grows. The residual standard error is 7.3 and the multiple R-squared is 0.54.
+This graph shows that head width grows as length of bear grows. The residual standard error is 7.3 and the adjusted R-squared is 0.5321.
 
 
 ```{r}
@@ -65,7 +65,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph shows that the chest of the bear grows as the length grows. The residual standard error is 4.9 and the multiple R-squared is 0.79.
+This graph shows that the chest of the bear grows as the length grows. The residual standard error is 4.9 and the adjusted R-squared is 0.7869.
 
 ```{r}
 simp <- lm(LENGTH~WEIGHT,data=bears)
@@ -74,11 +74,12 @@ abline(simp)
 summary.lm(simp)
 ```
 
-This graph shows that the weight of the bear grows as the length grows. The residual standard error is 5.43 and the multiple R-squared is 0.7472.
+This graph shows that the weight of the bear grows as the length grows. The residual standard error is 5.43 and the adjusted R-squared is 0.7423.
 
 
-##compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Ajusted-Rsqared(bigger is better), or ny RSE (residual standard error) where smaller is better.
+##compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsqared(bigger is better), or ny RSE (residual standard error) where smaller is better.
 
+I will be ordering according to adjusted-Rquared from best to worst.
 
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
