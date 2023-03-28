@@ -79,11 +79,26 @@ This graph shows that the weight of the bear grows as the length grows. The resi
 
 ##compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsqared(bigger is better), or ny RSE (residual standard error) where smaller is better.
 
-I will be ordering according to adjusted-Rquared from best to worst.
+I will be ordering according to adjusted-Rsquared from best to worst.
+
+1) Head length - 0.8434
+
+2) Chest- 0.7869
+
+3) Neck- 0.7476
+
+4) Weight- 0.7423
+
+5) Head Width- 0.5321
+
+6) Age- 0.5073
 
 
 ## now predict the length of a bear who has a neck of 17, 22 and 26
 
 
+
+
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
+
 
